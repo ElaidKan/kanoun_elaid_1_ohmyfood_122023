@@ -4,7 +4,7 @@
     align-items: center;
     background: var(--Background, #F6F6F6);
     padding-top: 39px;
-    padding-bottom: 57px;  
+    padding-bottom: 57px;
 }
 
 h1 {
@@ -33,4 +33,10 @@ p {
     height: 50px;
     padding: 13px 19px;
     text-decoration: none;
+    transition: transform 1000ms;
+
+    &:hover {
+       opacity: 0.80;
+       box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+    }
 }

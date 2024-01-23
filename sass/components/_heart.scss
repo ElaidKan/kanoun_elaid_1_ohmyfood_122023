@@ -1,4 +1,35 @@
-.fa-heart {
+.heart-icon {
     margin: 23px 25px 33px 0;
-    font-size: 22px;
+    font-size: 1.4rem;
+    position: relative;
+    top: 1px;
+
+    .coeur-vide {
+        transition: opacity 900ms;
+        position: absolute;
+    }
+
+    .coeur-plein {
+        position: absolute;
+        transition: all 500ms;
+        transform: scale(0);
+        
+    }
+
+    &:hover {
+        .coeur-vide {
+            opacity: 0;
+        }
+
+        .coeur-plein {
+            background-size: cover;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-image: linear-gradient(180deg, #9356DC 0%, #FF79DA 50%);
+            transform: scale(1);
+            animation: heart 3s 100ms;
+            // transform: translateX(-22px);
+        }
+    }
 }
