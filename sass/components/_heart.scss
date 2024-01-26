@@ -13,7 +13,10 @@
         position: absolute;
         transition: all 500ms;
         transform: scale(0);
-        
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-image: linear-gradient(180deg, $color-primary 0%, $color-secondary 50%); 
+        color: $color-secondary;
     }
 
     &:hover {
@@ -23,13 +26,10 @@
 
         .coeur-plein {
             background-size: cover;
-            background-clip: text;
-            -webkit-background-clip: text;
             color: transparent;
-            background-image: linear-gradient(180deg, #9356DC 0%, #FF79DA 50%);
+            background-image: linear-gradient(180deg, $color-primary 0%, $color-secondary 50%);
             transform: scale(1);
             animation: heart 3s 100ms;
-            // transform: translateX(-22px);
         }
     }
 }
