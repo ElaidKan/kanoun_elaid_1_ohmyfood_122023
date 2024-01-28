@@ -1,3 +1,9 @@
+.img-en-tete {
+    height: 275px;
+    width: 100%;
+    object-fit: cover;
+}
+
 .menu-restaurant {
     display: inline-flex;
     flex-direction: column;
@@ -7,11 +13,11 @@
     padding: 32px 12px 40px 12px;
     margin-top: -45px;
     width: 100%;
-}
 
-.img-en-tete {
-    height: 275px;
-    width: 100%;
+    @media only screen and (min-width: 768px) {
+        margin: -45px 192px 0 192px;
+        width: 70%;
+    }
 }
 
 .adress-restaurant {
@@ -26,6 +32,10 @@
     gap: 12px;
     width: 100%;
     margin-bottom: 40px;
+
+    @media only screen and (min-width: 768px) {
+        width: 50%;
+    }
 }
 
 .menu-restaurant h2 {
@@ -68,11 +78,11 @@
 }
 
 .price {
-padding: 40px 15px 10px 0;
+    padding: 40px 15px 10px 0;
 }
 
 .type-menu {
-    border-bottom:solid 3px $color-tertiaire; 
+    border-bottom: solid 3px $color-tertiaire;
     font-weight: 300;
     width: 40px;
     padding-bottom: 8px;
