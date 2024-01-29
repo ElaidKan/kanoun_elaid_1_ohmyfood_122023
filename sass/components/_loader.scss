@@ -12,8 +12,8 @@
     margin-right: -59px;
     font-size: x-large;
 
-    &:hover {
 
+    &:hover {
         animation: my-favorite 3s 100ms;
     }
 }
@@ -62,7 +62,7 @@
 
 .loader-quart {
     border-radius: 50px;
-    border: 6px solid rgba($color: white, $alpha: 0.4);
+    border: 6px solid rgba($color: $color-three, $alpha: 0.4);
 }
 
 .loader-quart:after {

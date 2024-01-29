@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     color: $grey-1;
-    background: $grey-2;
+    background: $color-two;
     height: 50px;
     width: 100%;
     gap: 17px;
@@ -11,15 +11,15 @@
 
 input {
     border: none;
-    background-color: $grey-2;
+    background-color: $color-two;
     width: 120px;
-    color: $grey-1;
+    color: $color-one;
     font-size: 16px;
     font-weight: 500;
 }
 
 ::placeholder {
-    color: $grey-1;
+    color: $color-one;
 }
 
 .center-button h1 p {
@@ -77,13 +77,13 @@ h3 {
     border: 2px solid $color-primary;
     border-radius: 50%;
     background-color: $color-primary;
-    color: var(--White, #FFF);
+    color: $color-three;
     font-size: 14px;
     font-weight: 500;
 }
 
 .texte-commande {
-    border: 1px solid white;
+    border: 1px solid $color-three;
     border-radius: 20px;
     height: 72px;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
@@ -108,7 +108,7 @@ h3 {
 
 //   cartes**
 .restaurant-list {
-    background: var(--Background, #F6F6F6);
+    background: $color-three;
     padding: 30px 17px 65px 17px;
 
     @media only screen and (min-width: 768px) {
@@ -128,7 +128,7 @@ h3 {
 .card {
     border-radius: 15px;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
-    background-color: #FFF;
+    background-color: $color-three;
     margin-top: 18px;
 
     @media only screen and (min-width: 768px) {

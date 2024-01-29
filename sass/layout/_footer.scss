@@ -1,5 +1,5 @@
 .footer {
-    background: var(--Grey, #353535);
+    background: $color-one;
     padding: 22px 25px;
 
     @media only screen and (min-width: 768px) {
@@ -27,13 +27,13 @@
     }
 
     .fa-solid {
-        color: #FFF;
+        color: $color-three;
         margin: 0;
         width: 20px;
     }
 
     .footer-link {
-        color: var(--White, #FFF);
+        color: $color-three;
         font-size: 16px;
         text-decoration: none;
         display: flex;
@@ -66,8 +66,4 @@
     gap: 10px;
     margin-bottom: 7px;
 
-    @media only screen and (min-width: 768px) {
-        // display: flex;
-        // flex-direction: column;
-    }
 }

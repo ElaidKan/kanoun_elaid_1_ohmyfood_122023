@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: var(--Background, #F6F6F6);
+    background: $color-three;
     padding: 39px 0 57px 0;
 
     @media only screen and (min-width: 768px) {
@@ -28,9 +28,9 @@ p {
 
 .main-button {
     border-radius: 25px;
-    background-color: #9356DC;
-    color: white;
-    background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+    background-color: $color-primary;
+    color: $color-three;
+    background: var(--Button-Gradient, linear-gradient(193deg, $color-primary -11.44%, $color-secondary 123.93%));
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     width: 218px;
     height: 50px;
