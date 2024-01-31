@@ -16,6 +16,14 @@
     &:hover {
         animation: my-favorite 3s 100ms;
     }
+
+    .fa-check {
+        background-color: $color-three;
+        color: $color-tertiaire;
+        border-radius: 25px;
+        font-size: 16px;
+        padding: 6px;
+    }
 }
 
 .carte-restaurant:hover .my-favorite {
@@ -27,42 +35,44 @@
 
 
 .loader-body {
+    display: inline-block;
     margin: 0;
     padding: 0;
     text-align: center;
     width: 100%;
-    height: 500px;
+    height: 100%;
     position: fixed;
     z-index: 100;
     animation-name: loader;
     animation-duration: 5s;
     animation-fill-mode: forwards;
     pointer-events: none;
+    background-color: $color-three;
+    
 
-}
-
-.loader-section {
-    background-color: rgba(192, 192, 192, 0.5);
-    color: $color-secondary;
-    font-family: Shrikhand;
-    font-size: 22px;
-    height: 500px;
-    line-height: 500px;
 }
 
 // $loader quart de cercle
 
 .loader {
-    height: 50px;
-    width: 50px;
-    display: inline-block;
-    vertical-align: middle;
+    vertical-align: -380px;
     position: relative;
+    color: $color-tertiaire;
+    font-family: Shrikhand;
+    font-size: 22px;
+    height: 500px;
+    line-height: 500px;
+    
 }
 
 .loader-quart {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
     border-radius: 50px;
     border: 6px solid rgba($color: $color-three, $alpha: 0.4);
+    position: relative;
+    vertical-align: -380px;
 }
 
 .loader-quart:after {
@@ -76,8 +86,8 @@
     left: -6px;
     border-radius: 50px;
     border: 6px solid transparent;
-    border-top-color: $color-secondary;
-    animation: spin 1s linear 0S infinite;
+    border-top-color: $color-tertiaire;
+    animation: spin 1s linear .5S infinite;
 }
 
 @keyframes spin {

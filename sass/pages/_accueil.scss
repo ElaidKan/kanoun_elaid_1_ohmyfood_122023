@@ -1,29 +1,20 @@
 .localisation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $grey-1;
+    color: $color-one;
     background: $color-two;
     height: 50px;
     width: 100%;
     gap: 17px;
-}
 
-input {
-    border: none;
-    background-color: $color-two;
-    width: 120px;
-    color: $color-one;
-    font-size: 16px;
-    font-weight: 500;
-}
+    input {
+        color: $color-one;
+        background-color: $color-two;
+        border: none;
+        width: 120px;
+    }
 
-::placeholder {
-    color: $color-one;
-}
-
-.center-button h1 p {
-    text-align: center;
+    ::placeholder {
+        color: $color-one;
+    }
 }
 
 // Fonctionnement*****/
@@ -38,7 +29,7 @@ input {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        padding: 25px 0 50px 0;
+        padding: 25px 20px 50px 20px;
     }
 }
 
@@ -49,7 +40,6 @@ input {
     font-weight: 700;
 
     @media only screen and (min-width: 768px) {
-        margin-left: 200px;
         margin-top: 50px;
     }
 }
@@ -61,7 +51,6 @@ input {
     font-weight: 700;
 
     @media only screen and (min-width: 768px) {
-        margin-left: 200px;
         margin-top: 0;
     }
 }
@@ -71,35 +60,45 @@ h3 {
 }
 
 .numero-ordre {
-    transform: translateX(-45px);
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
     border: 2px solid $color-primary;
     border-radius: 50%;
     background-color: $color-primary;
     color: $color-three;
     font-size: 14px;
     font-weight: 500;
+    position: relative;
+    left: -13px;
+    padding: 7px;
 }
 
 .texte-commande {
-    border: 1px solid $color-three;
+    display: flex;
+    align-items: center;
+    border: 1px solid $color-two;
     border-radius: 20px;
     height: 72px;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
     margin: 0 20px 0 32px;
     padding: 0;
+    background-color: $color-two;
 
     @media only screen and (min-width: 768px) {
         max-width: 1024px;
         width: 322px;
         margin: 0;
     }
+
+    p {
+        margin-left: 16px;
+    }
 }
 
 .grid-list .fa-solid {
     padding: 0;
     width: 20px;
+    margin: 0 15px;
 }
 
 .button {
@@ -112,7 +111,11 @@ h3 {
     padding: 30px 17px 65px 17px;
 
     @media only screen and (min-width: 768px) {
-        padding-bottom: 0;
+        padding-bottom: 30px;
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 1080px;
+        margin: auto;
     }
 }
 
@@ -120,7 +123,10 @@ h3 {
     @media only screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-around;
+        gap: 50px 100px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -132,8 +138,7 @@ h3 {
     margin-top: 18px;
 
     @media only screen and (min-width: 768px) {
-        width: 450px;
-        margin: 30px 50px 20px 50px;
+        width: 434px;
     }
 
     @media only screen and (min-width: 1024px) {}
@@ -179,4 +184,11 @@ h3 {
     padding: 6px 9px;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
     margin-top: 10px;
+}
+
+.fonctionnement-container {
+    @media screen and (min-width:1024px) {
+        max-width: 1080px;
+        margin: auto;
+    }
 }
